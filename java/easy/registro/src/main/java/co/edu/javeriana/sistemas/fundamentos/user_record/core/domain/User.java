@@ -3,7 +3,7 @@ package co.edu.javeriana.sistemas.fundamentos.user_record.core.domain;
 import java.time.LocalDate;
 
 public class User {
-    //nombres.getText() + SEPARADOR + apellidos.getText() + SEPARADOR + tipoDocumento.getValue() + SEPARADOR + numeroDocumento.getText() + SEPARADOR + email.getText() + SEPARADOR+ telefono.getText() + SEPARADOR + genero.getValue());
+
     private final String names;
     private final String lastNames;
     private final String documentType;
@@ -25,4 +25,40 @@ public class User {
         this.birthDate = birthDate;
         credential = new Credential(email, "123456");
     }
+
+    public String getNames() {
+        return names;
+    }
+
+    public String getLastNames() {
+        return lastNames;
+    }
+
+    public String getDocumentNumber() {
+        return documentNumber;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getDocumentType() {
+        return documentType;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public LocalDate getBirthDate() {
+        return birthDate;
+    }
+
+
+
+
 }
