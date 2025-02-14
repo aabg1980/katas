@@ -11,7 +11,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.stage.Window;
+
 
 import java.io.*;
 import java.net.URL;
@@ -99,7 +99,7 @@ public class RegistroController implements Initializable {
 
             }
             else {
-                saveToFile("reigstro.txt", nombres.getText() + SEPARADOR + apellidos.getText() + SEPARADOR + tipoDocumento.getValue() + SEPARADOR + numeroDocumento.getText() + SEPARADOR + email.getText() + SEPARADOR+ telefono.getText() + SEPARADOR + genero.getValue());
+                saveToFile("registro.txt", nombres.getText() + SEPARADOR + apellidos.getText() + SEPARADOR + tipoDocumento.getValue() + SEPARADOR + numeroDocumento.getText() + SEPARADOR + email.getText() + SEPARADOR+ telefono.getText() + SEPARADOR + genero.getValue());
                 welcomeText.setText("Guardando registros del usuario: " + nombres.getText() );
                 mensajeAlerta.setAlertType(Alert.AlertType.CONFIRMATION);
                 mensajeAlerta.setContentText("Registro guardado correctamente");
