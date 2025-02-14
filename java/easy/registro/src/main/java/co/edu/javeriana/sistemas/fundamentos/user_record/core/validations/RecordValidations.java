@@ -1,4 +1,4 @@
-package co.edu.javeriana.sistemas.fundamentos.registro.validations;
+package co.edu.javeriana.sistemas.fundamentos.user_record.core.validations;
 
 import java.time.LocalDate;
 /**
@@ -25,5 +25,12 @@ public class RecordValidations {
         }
         return birthDate.isBefore(LocalDate.now().minusYears(MIN_AGE));
 
+    }
+
+    /**
+     * Validar el numero de documento
+     * */
+    public boolean isValidDocumentNumber(String documentNumber) {
+        return documentNumber.matches("[0-9]+");
     }
 }

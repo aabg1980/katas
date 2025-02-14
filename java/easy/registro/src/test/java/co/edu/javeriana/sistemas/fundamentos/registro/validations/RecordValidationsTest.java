@@ -1,5 +1,6 @@
 package co.edu.javeriana.sistemas.fundamentos.registro.validations;
 
+import co.edu.javeriana.sistemas.fundamentos.user_record.core.validations.RecordValidations;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
